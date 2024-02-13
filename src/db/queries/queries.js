@@ -22,7 +22,7 @@ const salesRevenue = async (startDate, endDate) => {
   let [{ total_sales_revenue }] = result.rows;
 
   if (total_sales_revenue === null) {
-    total_sales_revenue = 0.00;
+    total_sales_revenue = "0.00";
   }
 
   return {

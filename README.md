@@ -60,7 +60,7 @@ Base URL = `http://localhost:8080`
    - Endpoint: `/sales-revenue`
    - Example: `http://localhost:8080/sales-revenue`
 
-   JSON object in body: { "endDate": "2024-02-11", "startDate": "2024-02-10" }
+   JSON object in body: { "endDate": "2024-02-13 23:59:59", "startDate": "2024-02-10 00:00:00" }
 
 ## Sample cURLs
 
@@ -69,6 +69,6 @@ Base URL = `http://localhost:8080`
 2. curl --location --request GET '<http://localhost:8080/sales-revenue>' \
    --header 'Content-Type: application/json' \
    --data '{
-   "endDate": "2024-02-11",
-   "startDate": "2024-02-10"
+   "endDate": "2024-02-13 23:59:59",
+   "startDate": "2024-02-10 00:00:00"
    }'

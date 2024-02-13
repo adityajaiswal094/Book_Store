@@ -13,7 +13,7 @@ const getTotalSalesRevenue = (app) => {
         });
       }
 
-      if (new Date(startDate).getTime() >= new Date(endDate).getTime()) {
+      if (new Date(startDate).getTime() > new Date(endDate).getTime()) {
         return res.status(422).json({
           title: "Unprocessable Entity",
           message: "'startDate' should be less than 'endDate'",
