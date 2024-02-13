@@ -5,10 +5,10 @@ const getTopSellingBooks = (app) => {
     try {
       const response = await topSellingBooks();
 
-      res.status(200).json(response);
+      return res.status(200).json(response);
     } catch (error) {
       console.error(error);
-      res.status(500).json({
+      return res.status(500).json({
         title: "Internal Server Error",
         message: "Something went wrong!",
       });
