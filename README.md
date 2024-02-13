@@ -39,7 +39,7 @@ An Express.js application which efficiently handles inventory, customer orders, 
 
 2. Run the following command in root directory to seed the db with dummy data:
 
-   - `npx knex seed: run`
+   - `npx knex seed:run`
 
 3. Now, in your root directory, run the command `npm run dev` to start the server.
 4. Finally, use Postman to test the APIs.
