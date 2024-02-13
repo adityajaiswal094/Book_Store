@@ -19,7 +19,11 @@ const salesRevenue = async (startDate, endDate) => {
 
   const result = await pool.query(query, [startDate, endDate]);
 
-  const [{ total_sales_revenue }] = result.rows;
+  let [{ total_sales_revenue }] = result.rows;
+
+  if (total_sales_revenue === null) {
+    total_sales_revenue = 0.00;
+  }
 
   return {
     startDate: startDate,
